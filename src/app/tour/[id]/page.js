@@ -189,62 +189,6 @@ export default function TourDetailsPage() {
       </div>
 
       {/* Booking Modal */}
-      {/* {isModalOpen && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
-          <div className="bg-white p-6 rounded-lg shadow-lg w-full max-w-md">
-            <h2 className="text-xl font-bold mb-4">Book Your Tour</h2>
-            <div className="space-y-4">
-              <input
-                type="text"
-                name="name"
-                placeholder="Full Name"
-                value={formData.name}
-                onChange={handleInputChange}
-                className="w-full border p-2 rounded"
-              />
-              <input
-                type="email"
-                name="email"
-                placeholder="Email"
-                value={formData.email}
-                onChange={handleInputChange}
-                className="w-full border p-2 rounded"
-              />
-              <input
-                type="tel"
-                name="phone"
-                placeholder="Phone Number"
-                value={formData.phone}
-                onChange={handleInputChange}
-                className="w-full border p-2 rounded"
-              />
-              <input
-                type="date"
-                name="travelDate"
-                value={formData.travelDate}
-                onChange={handleInputChange}
-                className="w-full border p-2 rounded"
-              />
-            </div>
-            <div className="flex justify-end mt-6 space-x-4">
-              <button
-                onClick={() => setIsModalOpen(false)}
-                className="px-4 py-2 bg-gray-300 rounded hover:bg-gray-400"
-              >
-                Cancel
-              </button>
-              <button
-                onClick={handleBooking}
-                className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
-              >
-                Confirm Booking
-              </button>
-            </div>
-          </div>
-        </div>
-      )} */}
-
-      {/* Booking Modal */}
       {isModalOpen && (
         <div className="fixed inset-0 z-50 flex items-center justify-center">
           {/* Semi-transparent background */}
@@ -275,7 +219,7 @@ export default function TourDetailsPage() {
                 className="w-full border p-2 rounded"
               />
               <input
-                type="tel"
+                type="number"
                 name="phone"
                 placeholder="Phone Number"
                 value={formData.phone}
